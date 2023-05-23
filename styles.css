@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container{
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+.container div{
+    width: 270px
+}
+
+.top-div{
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color .2s;
+}
+
+.view-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.top-div:active{
+    background: hsla(178, 100%, 50%);
+}
+
+.top-div:active .view-img{
+    display: block;
+}
+
+.bottom-div h3{
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.bottom-div p{
+    color: hsl(215, 51%, 70%);
+}
+
+.price-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding-bottom: 10px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+
+.price img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+}
+
+.time img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+.price-div h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.avatar img{
+    height: 30px;
+    border: 2px solid hsl(215, 51%, 70%);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.avatar span{
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+h3:active, span:active{
+    color: hsl(178, 100%, 50%);
+}
